@@ -1,4 +1,3 @@
-// data/mock_data.dart
 import '../models/content_models.dart';
 
 class MockData {

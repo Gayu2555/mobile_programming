@@ -1,4 +1,3 @@
-// screens/search_screen.dart
 import 'package:flutter/material.dart';
 import '../models/content_models.dart';
 import '../widgets/content_card.dart';

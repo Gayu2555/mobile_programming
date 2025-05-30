@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color primary = Color(0xFFE50914); // Netflix Red
-  static const Color secondary = Color(0xFF1DB954); // Spotify Green
+  static const Color primary = Color(0xFFE50914);
+  static const Color secondary = Color(0xFF1DB954);
   static const Color background = Color(0xFF000000);
   static const Color surface = Color(0xFF121212);
   static const Color cardBackground = Color(0xFF1E1E1E);

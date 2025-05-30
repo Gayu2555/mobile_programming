@@ -1,4 +1,3 @@
-// screens/home_screen.dart
 import 'package:flutter/material.dart';
 import '../models/content_models.dart';
 import '../widgets/featured_banner.dart';

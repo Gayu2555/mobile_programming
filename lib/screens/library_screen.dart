@@ -1,4 +1,3 @@
-// screens/library_screen.dart
 import 'package:flutter/material.dart';
 import '../models/content_models.dart';
 import '../widgets/content_list_item.dart';
@@ -27,7 +26,6 @@ class _LibraryScreenState extends State<LibraryScreen>
   }
 
   void _loadLibraryContent() {
-    // Simulate loading user's library content
     final categories = MockData.getCategories();
     final allContent = <dynamic>[];
 
@@ -58,11 +56,10 @@ class _LibraryScreenState extends State<LibraryScreen>
                 child: Row(
                   children: [
                     CircleAvatar(
-                      radius: 25,
-                      backgroundImage: NetworkImage(
-                        'https://i.pravatar.cc/150?img=1',
-                      ),
-                    ),
+                        radius: 25,
+                        backgroundImage: NetworkImage(
+                          'https://i.pravatar.cc/150?img=1',
+                        )),
                     SizedBox(width: 16),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
