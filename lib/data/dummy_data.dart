@@ -28,20 +28,45 @@ class MockData {
         name: 'Action Movies',
         content: _getActionMovies(),
       ),
+      Category(
+        id: '6',
+        name: 'Popular Anime',
+        content: _getPopularAnime(),
+      ),
+      Category(
+        id: '7',
+        name: 'Anime Movies',
+        content: _getAnimeMovies(),
+      ),
+      Category(
+        id: '8',
+        name: 'Shounen Anime',
+        content: _getShounenAnime(),
+      ),
+      Category(
+        id: '9',
+        name: 'Romance Anime',
+        content: _getRomanceAnime(),
+      ),
+      Category(
+        id: '10',
+        name: 'Slice of Life Anime',
+        content: _getSliceOfLifeAnime(),
+      ),
     ];
   }
 
   static VideoContent getFeaturedContent() {
     return VideoContent(
       id: 'featured_1',
-      title: 'Stranger Things',
+      title: 'Attack on Titan',
       description:
-          'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.',
+          'Humanity fights for survival against giant humanoid Titans. Eren Yeager joins the fight to reclaim the world and uncover the truth behind the Titans.',
       thumbnailUrl: 'https://picsum.photos/800/450?random=1',
-      videoUrl: 'https://example.com/stranger-things',
-      duration: '51 min',
-      genre: 'Sci-Fi',
-      rating: 8.7,
+      videoUrl: 'https://example.com/attack-on-titan',
+      duration: '24 min per episode',
+      genre: 'Action',
+      rating: 9.0,
       isNew: false,
       type: ContentType.series,
     );
@@ -100,6 +125,19 @@ class MockData {
         isNew: true,
         type: ContentType.movie,
       ),
+      VideoContent(
+        id: 'movie_5',
+        title: 'Dune',
+        description:
+            'Paul Atreides leads nomadic tribes in a revolt against the galactic emperor.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=50',
+        videoUrl: 'https://example.com/dune',
+        duration: '155 min',
+        genre: 'Sci-Fi',
+        rating: 8.0,
+        isNew: true,
+        type: ContentType.movie,
+      ),
     ];
   }
 
@@ -149,6 +187,17 @@ class MockData {
         genre: 'Pop',
         isExplicit: true,
       ),
+      AudioContent(
+        id: 'music_5',
+        title: 'Cruel Summer',
+        artist: 'Taylor Swift',
+        album: 'Lover',
+        thumbnailUrl: 'https://picsum.photos/300/300?random=51',
+        audioUrl: 'https://example.com/cruel-summer',
+        duration: '2:58',
+        genre: 'Pop',
+        isExplicit: false,
+      ),
     ];
   }
 
@@ -193,6 +242,19 @@ class MockData {
         isNew: true,
         type: ContentType.series,
       ),
+      VideoContent(
+        id: 'series_4',
+        title: 'House of the Dragon',
+        description:
+            'An internal succession war within House Targaryen at the height of its power.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=52',
+        videoUrl: 'https://example.com/house-of-dragon',
+        duration: '2 Seasons',
+        genre: 'Fantasy',
+        rating: 8.4,
+        isNew: true,
+        type: ContentType.series,
+      ),
     ];
   }
 
@@ -229,6 +291,17 @@ class MockData {
         audioUrl: 'https://example.com/ted-talks',
         duration: '20:00',
         genre: 'Education',
+        isExplicit: false,
+      ),
+      AudioContent(
+        id: 'podcast_4',
+        title: 'Crime Junkie',
+        artist: 'Ashley Flowers',
+        album: 'Podcast',
+        thumbnailUrl: 'https://picsum.photos/300/300?random=53',
+        audioUrl: 'https://example.com/crime-junkie',
+        duration: '1:15:00',
+        genre: 'True Crime',
         isExplicit: false,
       ),
     ];
@@ -273,6 +346,406 @@ class MockData {
         rating: 7.7,
         isNew: true,
         type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'action_4',
+        title: 'Fast X',
+        description: 'Dom and his family face their most lethal opponent.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=54',
+        videoUrl: 'https://example.com/fast-x',
+        duration: '141 min',
+        genre: 'Action',
+        rating: 5.8,
+        isNew: true,
+        type: ContentType.movie,
+      ),
+    ];
+  }
+
+  static List<VideoContent> _getPopularAnime() {
+    return [
+      VideoContent(
+        id: 'anime_1',
+        title: 'Attack on Titan',
+        description:
+            'Humanity fights for survival against giant humanoid Titans in this dark fantasy series.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=19',
+        videoUrl: 'https://example.com/attack-on-titan',
+        duration: '4 Seasons',
+        genre: 'Action',
+        rating: 9.0,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'anime_2',
+        title: 'Demon Slayer',
+        description:
+            'Tanjiro becomes a demon slayer to save his sister and avenge his family.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=20',
+        videoUrl: 'https://example.com/demon-slayer',
+        duration: '3 Seasons',
+        genre: 'Action',
+        rating: 8.7,
+        isNew: true,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'anime_3',
+        title: 'Jujutsu Kaisen',
+        description:
+            'Students at Tokyo Jujutsu High School fight against cursed spirits.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=21',
+        videoUrl: 'https://example.com/jujutsu-kaisen',
+        duration: '2 Seasons',
+        genre: 'Supernatural',
+        rating: 8.6,
+        isNew: true,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'anime_4',
+        title: 'One Piece',
+        description:
+            'Monkey D. Luffy explores the Grand Line to find the legendary treasure One Piece.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=22',
+        videoUrl: 'https://example.com/one-piece',
+        duration: '1000+ Episodes',
+        genre: 'Adventure',
+        rating: 9.1,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'anime_5',
+        title: 'My Hero Academia',
+        description:
+            'In a world where superpowers are common, Izuku dreams of becoming a hero.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=23',
+        videoUrl: 'https://example.com/my-hero-academia',
+        duration: '6 Seasons',
+        genre: 'Superhero',
+        rating: 8.5,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'anime_6',
+        title: 'Chainsaw Man',
+        description:
+            'Denji becomes the Chainsaw Man and hunts devils for the Public Safety Division.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=24',
+        videoUrl: 'https://example.com/chainsaw-man',
+        duration: '1 Season',
+        genre: 'Horror',
+        rating: 8.8,
+        isNew: true,
+        type: ContentType.series,
+      ),
+    ];
+  }
+
+  static List<VideoContent> _getAnimeMovies() {
+    return [
+      VideoContent(
+        id: 'anime_movie_1',
+        title: 'Spirited Away',
+        description:
+            'A girl enters a magical world and must work to free her parents from a curse.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=25',
+        videoUrl: 'https://example.com/spirited-away',
+        duration: '125 min',
+        genre: 'Fantasy',
+        rating: 9.3,
+        isNew: false,
+        type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'anime_movie_2',
+        title: 'Your Name',
+        description:
+            'Two teenagers share a profound, magical connection upon discovering they are swapping bodies.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=26',
+        videoUrl: 'https://example.com/your-name',
+        duration: '106 min',
+        genre: 'Romance',
+        rating: 8.4,
+        isNew: false,
+        type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'anime_movie_3',
+        title: 'Princess Mononoke',
+        description:
+            'A prince becomes involved in a struggle between forest gods and humans.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=27',
+        videoUrl: 'https://example.com/princess-mononoke',
+        duration: '134 min',
+        genre: 'Adventure',
+        rating: 8.4,
+        isNew: false,
+        type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'anime_movie_4',
+        title: 'Akira',
+        description:
+            'In Neo-Tokyo, Kaneda tries to save his friend Tetsuo from a secret government project.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=28',
+        videoUrl: 'https://example.com/akira',
+        duration: '124 min',
+        genre: 'Sci-Fi',
+        rating: 8.0,
+        isNew: false,
+        type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'anime_movie_5',
+        title: 'Weathering with You',
+        description:
+            'A high school boy who has run away to Tokyo befriends a girl who can manipulate weather.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=29',
+        videoUrl: 'https://example.com/weathering-with-you',
+        duration: '112 min',
+        genre: 'Romance',
+        rating: 7.5,
+        isNew: false,
+        type: ContentType.movie,
+      ),
+      VideoContent(
+        id: 'anime_movie_6',
+        title: 'Suzume',
+        description:
+            'A girl must close doors that are releasing disasters upon Japan.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=30',
+        videoUrl: 'https://example.com/suzume',
+        duration: '122 min',
+        genre: 'Adventure',
+        rating: 8.2,
+        isNew: true,
+        type: ContentType.movie,
+      ),
+    ];
+  }
+
+  static List<VideoContent> _getShounenAnime() {
+    return [
+      VideoContent(
+        id: 'shounen_1',
+        title: 'Naruto',
+        description:
+            'A young ninja seeks recognition and dreams of becoming the Hokage.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=31',
+        videoUrl: 'https://example.com/naruto',
+        duration: '720 Episodes',
+        genre: 'Action',
+        rating: 8.4,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'shounen_2',
+        title: 'Dragon Ball Z',
+        description: 'Goku and friends defend Earth against powerful enemies.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=32',
+        videoUrl: 'https://example.com/dragon-ball-z',
+        duration: '291 Episodes',
+        genre: 'Action',
+        rating: 8.8,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'shounen_3',
+        title: 'Bleach',
+        description:
+            'Ichigo Kurosaki gains Soul Reaper powers and protects humans from evil spirits.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=33',
+        videoUrl: 'https://example.com/bleach',
+        duration: '4 Seasons',
+        genre: 'Supernatural',
+        rating: 8.2,
+        isNew: true,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'shounen_4',
+        title: 'Hunter x Hunter',
+        description:
+            'Gon Freecss discovers his father is a legendary Hunter and decides to follow his path.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=34',
+        videoUrl: 'https://example.com/hunter-x-hunter',
+        duration: '148 Episodes',
+        genre: 'Adventure',
+        rating: 9.0,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'shounen_5',
+        title: 'Black Clover',
+        description:
+            'Asta, born without magic, aims to become the Wizard King in a world full of magic.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=35',
+        videoUrl: 'https://example.com/black-clover',
+        duration: '170 Episodes',
+        genre: 'Magic',
+        rating: 8.3,
+        isNew: false,
+        type: ContentType.series,
+      ),
+    ];
+  }
+
+  static List<VideoContent> _getRomanceAnime() {
+    return [
+      VideoContent(
+        id: 'romance_1',
+        title: 'Kaguya-sama: Love is War',
+        description:
+            'Two prideful students engage in psychological warfare to make the other confess their love.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=36',
+        videoUrl: 'https://example.com/kaguya-sama',
+        duration: '3 Seasons',
+        genre: 'Romance',
+        rating: 8.9,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'romance_2',
+        title: 'Toradora!',
+        description:
+            'Two high school students help each other pursue their respective crushes.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=37',
+        videoUrl: 'https://example.com/toradora',
+        duration: '25 Episodes',
+        genre: 'Romance',
+        rating: 8.1,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'romance_3',
+        title: 'Your Lie in April',
+        description:
+            'A piano prodigy meets a violinist who changes his black and white world.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=38',
+        videoUrl: 'https://example.com/your-lie-in-april',
+        duration: '22 Episodes',
+        genre: 'Drama',
+        rating: 8.6,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'romance_4',
+        title: 'Horimiya',
+        description:
+            'A popular girl and a gloomy boy discover each other\'s hidden sides.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=39',
+        videoUrl: 'https://example.com/horimiya',
+        duration: '13 Episodes',
+        genre: 'Romance',
+        rating: 8.2,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'romance_5',
+        title: 'Rent-a-Girlfriend',
+        description:
+            'A college student rents a girlfriend and gets caught up in complicated relationships.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=40',
+        videoUrl: 'https://example.com/rent-a-girlfriend',
+        duration: '3 Seasons',
+        genre: 'Romance',
+        rating: 6.4,
+        isNew: true,
+        type: ContentType.series,
+      ),
+    ];
+  }
+
+  static List<VideoContent> _getSliceOfLifeAnime() {
+    return [
+      VideoContent(
+        id: 'slice_1',
+        title: 'K-On!',
+        description:
+            'Four high school girls join the light music club and form a band.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=41',
+        videoUrl: 'https://example.com/k-on',
+        duration: '2 Seasons',
+        genre: 'Music',
+        rating: 7.9,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'slice_2',
+        title: 'Violet Evergarden',
+        description:
+            'A former soldier works as an Auto Memory Doll to understand human emotions.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=42',
+        videoUrl: 'https://example.com/violet-evergarden',
+        duration: '13 Episodes',
+        genre: 'Drama',
+        rating: 8.5,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'slice_3',
+        title: 'March Comes in Like a Lion',
+        description:
+            'A professional shogi player copes with his past while building new relationships.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=43',
+        videoUrl: 'https://example.com/march-comes-in-like-a-lion',
+        duration: '2 Seasons',
+        genre: 'Drama',
+        rating: 8.9,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'slice_4',
+        title: 'Barakamon',
+        description:
+            'A calligrapher moves to a rural island and learns about life from the locals.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=44',
+        videoUrl: 'https://example.com/barakamon',
+        duration: '12 Episodes',
+        genre: 'Comedy',
+        rating: 8.3,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'slice_5',
+        title: 'Non Non Biyori',
+        description:
+            'The peaceful daily life of students in a rural countryside school.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=45',
+        videoUrl: 'https://example.com/non-non-biyori',
+        duration: '3 Seasons',
+        genre: 'Comedy',
+        rating: 8.1,
+        isNew: false,
+        type: ContentType.series,
+      ),
+      VideoContent(
+        id: 'slice_6',
+        title: 'Yuru Camp',
+        description:
+            'High school girls enjoy camping and outdoor activities together.',
+        thumbnailUrl: 'https://picsum.photos/300/450?random=46',
+        videoUrl: 'https://example.com/yuru-camp',
+        duration: '2 Seasons',
+        genre: 'Adventure',
+        rating: 8.2,
+        isNew: false,
+        type: ContentType.series,
       ),
     ];
   }

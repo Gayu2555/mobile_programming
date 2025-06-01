@@ -6,8 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sono"
-    compileSdk = flutter.compileSdkVersion
+    namespace = "com.example.sono" // Pastikan namespace ini sesuai dengan proyek Anda
+    
+    // DIUBAH: Menggunakan API Level 34 secara langsung
+    compileSdk = 34
+    
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -21,11 +24,15 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.sono"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        applicationId = "com.example.sono" // Pastikan applicationId ini sesuai dengan proyek Anda
+        
+        // minSdk bisa tetap menggunakan variabel dari Flutter
         minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        
+        // DIUBAH: Menggunakan API Level 34 secara langsung
+        targetSdk = 34
+        
+        // versionCode dan versionName tetap menggunakan variabel dari Flutter
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -41,4 +48,8 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+
 }
