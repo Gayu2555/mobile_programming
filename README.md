@@ -73,7 +73,7 @@ Sono is a comprehensive streaming application built with Flutter that combines *
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/sono-streaming-app.git
+   git clone https://github.com/Gayu2555/sono-streaming-app.git
    cd sono-streaming-app
    ```
 
