@@ -62,7 +62,8 @@ class MockData {
       title: 'Attack on Titan',
       description:
           'Humanity fights for survival against giant humanoid Titans. Eren Yeager joins the fight to reclaim the world and uncover the truth behind the Titans.',
-      thumbnailUrl: 'https://picsum.photos/800/450?random=1',
+      thumbnailUrl:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ac94a777-d256-47df-b08e-29a03ca02ec6/dg83zic-c95aaa32-d370-44a6-ad28-5eef8587efbd.png/v1/fill/w_774,h_1032,q_70,strp/poster___attack_on_titan_by_staku1_dg83zic-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcL2FjOTRhNzc3LWQyNTYtNDdkZi1iMDhlLTI5YTAzY2EwMmVjNlwvZGc4M3ppYy1jOTVhYWEzMi1kMzcwLTQ0YTYtYWQyOC01ZWVmODU4N2VmYmQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6cu7xVSRjlBNz538PpwBIxvTifYENK1Oycj8epjWiWU',
       videoUrl: 'https://example.com/attack-on-titan',
       duration: '24 min per episode',
       genre: 'Action',
@@ -535,7 +536,7 @@ class MockData {
         title: 'Naruto',
         description:
             'A young ninja seeks recognition and dreams of becoming the Hokage.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=31',
+        thumbnailUrl: 'https://wallpapercave.com/wp/wp8840621.jpg',
         videoUrl: 'https://example.com/naruto',
         duration: '720 Episodes',
         genre: 'Action',
@@ -547,7 +548,8 @@ class MockData {
         id: 'shounen_2',
         title: 'Dragon Ball Z',
         description: 'Goku and friends defend Earth against powerful enemies.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=32',
+        thumbnailUrl:
+            'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0d31f134-d1e5-44f8-9004-78090d59f973/dcg184v-e2250adc-e2e9-4bdd-baa1-e7bf94bebaf1.jpg/v1/fill/w_900,h_1350,q_75,strp/dragon_ball_z_posters_by_myyctz_dcg184v-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBkMzFmMTM0LWQxZTUtNDRmOC05MDA0LTc4MDkwZDU5Zjk3M1wvZGNnMTg0di1lMjI1MGFkYy1lMmU5LTRiZGQtYmFhMS1lN2JmOTRiZWJhZjEuanBnIiwiaGVpZ2h0IjoiPD0xMzUwIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC8wZDMxZjEzNC1kMWU1LTQ0ZjgtOTAwNC03ODA5MGQ1OWY5NzNcL215eWN0ei00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.Yt5ZQ_sDgi_iqvZUhHWzMI-ku1A6idZRSBDdjNJQUj0',
         videoUrl: 'https://example.com/dragon-ball-z',
         duration: '291 Episodes',
         genre: 'Action',
@@ -560,7 +562,7 @@ class MockData {
         title: 'Bleach',
         description:
             'Ichigo Kurosaki gains Soul Reaper powers and protects humans from evil spirits.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=33',
+        thumbnailUrl: 'https://picfiles.alphacoders.com/186/186584.jpg',
         videoUrl: 'https://example.com/bleach',
         duration: '4 Seasons',
         genre: 'Supernatural',
@@ -573,7 +575,8 @@ class MockData {
         title: 'Hunter x Hunter',
         description:
             'Gon Freecss discovers his father is a legendary Hunter and decides to follow his path.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=34',
+        thumbnailUrl:
+            'https://i.pinimg.com/originals/c5/d1/a9/c5d1a932c851ed6217098a7d97a4fb9f.jpg',
         videoUrl: 'https://example.com/hunter-x-hunter',
         duration: '148 Episodes',
         genre: 'Adventure',
@@ -586,7 +589,7 @@ class MockData {
         title: 'Black Clover',
         description:
             'Asta, born without magic, aims to become the Wizard King in a world full of magic.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=35',
+        thumbnailUrl: 'https://wallpapercave.com/wp/wp9648761.png',
         videoUrl: 'https://example.com/black-clover',
         duration: '170 Episodes',
         genre: 'Magic',
@@ -604,7 +607,8 @@ class MockData {
         title: 'Kaguya-sama: Love is War',
         description:
             'Two prideful students engage in psychological warfare to make the other confess their love.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=36',
+        thumbnailUrl:
+            'https://m.media-amazon.com/images/M/MV5BYjEwNjEwYzgtZGZkMy00MTBjLTg2MmYtNDk0MzY2NmU0MmNiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg',
         videoUrl: 'https://example.com/kaguya-sama',
         duration: '3 Seasons',
         genre: 'Romance',
@@ -617,7 +621,8 @@ class MockData {
         title: 'Toradora!',
         description:
             'Two high school students help each other pursue their respective crushes.',
-        thumbnailUrl: 'https://picsum.photos/300/450?random=37',
+        thumbnailUrl:
+            'https://i5.walmartimages.com/seo/Toradora-Anime-Poster-and-Prints-Unframed-Wall-Art-Gifts-Decor-12x18-inches-30-x-46-cm-Toradora02_53c34de1-17bb-497a-8bc2-2b3f6da2f34d.2f451019d29d04282a017693895feec5.jpeg',
         videoUrl: 'https://example.com/toradora',
         duration: '25 Episodes',
         genre: 'Romance',
